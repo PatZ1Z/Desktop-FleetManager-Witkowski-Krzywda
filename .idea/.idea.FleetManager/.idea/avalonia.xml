@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="FleetManager/Views/MainWindow.axaml" value="FleetManager/FleetManager.csproj" />
+        <entry key="FleetManager/Views/VehicleItemView.axaml" value="FleetManager/FleetManager.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
