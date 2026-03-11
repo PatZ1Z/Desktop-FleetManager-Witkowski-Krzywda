@@ -3,6 +3,7 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="FleetManager/Views/FleetList.axaml" value="FleetManager/FleetManager.csproj" />
         <entry key="FleetManager/Views/MainWindow.axaml" value="FleetManager/FleetManager.csproj" />
         <entry key="FleetManager/Views/VehicleItemView.axaml" value="FleetManager/FleetManager.csproj" />
       </map>
