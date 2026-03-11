@@ -1,5 +1,37 @@
 [
   {
-    
+    "VehicleId": 1,
+    "VehicleName": "Honda Civic",
+    "VehicleTag": "NO784AB",
+    "VehicleFuel": 0.8,
+    "VehicleStatus": "Available"
+  },
+  {
+    "VehicleId": 2,
+    "VehicleName": "Fiat Punto",
+    "VehicleTag": "NO232KE",
+    "VehicleFuel": 1,
+    "VehicleStatus": "In Route"
+  },
+  {
+    "VehicleId": 3,
+    "VehicleName": "Toyota Yaris",
+    "VehicleTag": "NOL760TE",
+    "VehicleFuel": 0.5,
+    "VehicleStatus": "Available"
+  },
+  {
+    "VehicleId": 4,
+    "VehicleName": "Ford Fiesta",
+    "VehicleTag": "NOL022ER",
+    "VehicleFuel": 0.7,
+    "VehicleStatus": "In Route"
+  },
+  {
+    "VehicleId": 5,
+    "VehicleName": "Ford F150",
+    "VehicleTag": "WW767AK",
+    "VehicleFuel": 0.0,
+    "VehicleStatus": "Service"
   }
 ]
