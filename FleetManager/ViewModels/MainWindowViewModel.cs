@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Reactive;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using FleetManager.Models;
 using ReactiveUI;
 
@@ -20,7 +21,7 @@ public class MainWindowViewModel : ViewModelBase
 
     public MainWindowViewModel()
     {
-        LoadCharacters();
+        LoadVehicles();
         SaveCommand = ReactiveCommand.Create(SaveToJson);
     }
     
@@ -46,28 +47,31 @@ public class MainWindowViewModel : ViewModelBase
         }
     }
     
-    private void LoadCharacters()
+    private void LoadVehicles()
     {
         if (!File.Exists(FilePath))
         {
             Console.WriteLine($"File {FilePath} not found");
             return;
         }
+
         try
         {
             var jsonData = File.ReadAllText(FilePath);
-            var list = JsonSerializer.Deserialize<List<Vehicle>>(jsonData);
+            
+            var list = JsonSerializer.Deserialize<List<Vehicle>>(jsonData, _options);
+
             Vehicles.Clear();
             if (list == null) return;
-            foreach (var vechicle in list)
+
+            foreach (var vehicle in list)
             {
-                Vehicles.Add(vechicle);
+                Vehicles.Add(vehicle);
             }
         }
         catch (Exception e)
         {
             Console.WriteLine(e);
         }
-        
     }
 }

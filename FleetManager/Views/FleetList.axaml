@@ -3,9 +3,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:Models="clr-namespace:FleetManager.Models"
+             xmlns:protocol="clr-namespace:Tmds.DBus.Protocol;assembly=Tmds.DBus.Protocol"
+             xmlns:system="clr-namespace:System;assembly=System.Runtime"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="FleetManager.Views.FleetList"
-             x:DataType="Models:Vehicle">
+             x:DataType="Models:Vehicle"
+             >
     
     <Border Padding="10"
             Margin="5"
@@ -50,12 +53,22 @@
                          Foreground="#FFB500"/>
 
             <!-- Status -->
-            <TextBlock Grid.Column="4"
-                       Text="{Binding VehicleStatus}"
-                       Foreground="{Binding StatusColor}"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Center"
-                       TextAlignment="Center"/>
+            <StackPanel Grid.Column="4" Orientation="Vertical">
+                <ComboBox 
+                          SelectedItem="{Binding VehicleStatus, Mode=TwoWay}"
+                          VerticalAlignment="Center"
+                          IsEnabled="{Binding CanChangeStatus}">
+                    <ComboBox.Items>
+                        <x:String>Available</x:String>
+                        <x:String>In Route</x:String>
+                        <x:String>Service</x:String>
+                    </ComboBox.Items>
+                </ComboBox>
+
+                <TextBlock Text="{Binding VehicleStatus}" 
+                           Foreground="{Binding StatusColor}" 
+                           Margin="5,0,0,0"/>
+            </StackPanel>
 
         </Grid>
 

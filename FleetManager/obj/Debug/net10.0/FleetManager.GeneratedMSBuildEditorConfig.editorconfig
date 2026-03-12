@@ -17,20 +17,20 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FleetManager
-build_property.ProjectDir = /home/maciej/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/
+build_property.ProjectDir = /home/pat/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[/home/maciej/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/App.axaml]
+[/home/pat/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/maciej/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/Views/FleetList.axaml]
+[/home/pat/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/Views/FleetList.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/maciej/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/Views/MainWindow.axaml]
+[/home/pat/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/maciej/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/Views/VehicleItemView.axaml]
+[/home/pat/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/Views/VehicleItemView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
