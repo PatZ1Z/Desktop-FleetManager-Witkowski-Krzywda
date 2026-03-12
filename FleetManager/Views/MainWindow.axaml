@@ -17,33 +17,40 @@
     </Design.DataContext>
 
     
-    <StackPanel>
-
+    <StackPanel Background="#351C15">
+        <TextBlock Text="UPS BS. (Bullshit) services"
+                   Margin="10"
+                   HorizontalAlignment="Center"
+                   FontSize="30"
+                   FontWeight="Bold"
+                   Foreground="#FFB500"/>
+        
         <Button
             Content="Zapisz zmiany"
             HorizontalAlignment="Center"
             Command="{Binding SaveCommand}"
             CornerRadius="5"
-            Background="Beige"
-            />
+            Background="#FFB500"
+        />
+        
         <!-- Nagłówki -->
         <Grid ColumnDefinitions="55,155,105,*,125"
               ColumnSpacing="5"
               Margin="5">
     
-            <TextBlock Grid.Column="0" Text="ID" FontWeight="Bold"
+            <TextBlock Grid.Column="0" Text="ID" FontWeight="Bold" Foreground="#FFB500"
                        HorizontalAlignment="Center" TextAlignment="Center"/>
     
-            <TextBlock Grid.Column="1" Text="Name" FontWeight="Bold"
+            <TextBlock Grid.Column="1" Text="Name" FontWeight="Bold" Foreground="#FFB500"
                        HorizontalAlignment="Center" TextAlignment="Center"/>
     
-            <TextBlock Grid.Column="2" Text="Tag" FontWeight="Bold"
+            <TextBlock Grid.Column="2" Text="Tag" FontWeight="Bold" Foreground="#FFB500"
                        HorizontalAlignment="Center" TextAlignment="Center"/>
     
-            <TextBlock Grid.Column="3" Text="Fuel" FontWeight="Bold"
+            <TextBlock Grid.Column="3" Text="Fuel" FontWeight="Bold" Foreground="#FFB500"
                        HorizontalAlignment="Center" TextAlignment="Center"/>
     
-            <TextBlock Grid.Column="4" Text="Status" FontWeight="Bold"
+            <TextBlock Grid.Column="4" Text="Status" FontWeight="Bold" Foreground="#FFB500"
                        HorizontalAlignment="Center" TextAlignment="Center"/>
         </Grid>
 

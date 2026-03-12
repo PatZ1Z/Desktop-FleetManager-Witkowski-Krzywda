@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/pat/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/FleetManager.csproj": {}
+    "/home/maciej/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/FleetManager.csproj": {}
   },
   "projects": {
-    "/home/pat/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/FleetManager.csproj": {
+    "/home/maciej/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/FleetManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/pat/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/FleetManager.csproj",
+        "projectUniqueName": "/home/maciej/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/FleetManager.csproj",
         "projectName": "FleetManager",
-        "projectPath": "/home/pat/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/FleetManager.csproj",
-        "packagesPath": "/home/pat/.nuget/packages/",
-        "outputPath": "/home/pat/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/obj/",
+        "projectPath": "/home/maciej/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/FleetManager.csproj",
+        "packagesPath": "/home/maciej/.nuget/packages/",
+        "outputPath": "/home/maciej/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/pat/.nuget/NuGet/NuGet.Config"
+          "/home/maciej/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -89,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/pat/.dotnet/sdk/10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/home/maciej/.dotnet/sdk/10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
