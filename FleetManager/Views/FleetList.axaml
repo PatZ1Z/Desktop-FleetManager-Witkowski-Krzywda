@@ -14,26 +14,30 @@
 
         <Grid ColumnDefinitions="50,150,100,*,120"
               VerticalAlignment="Center"
-              ColumnSpacing="5">
+              ColumnSpacing="5"
+              >
 
             <!-- ID -->
             <TextBlock Grid.Column="0"
                        Text="{Binding VehicleId}"
                        VerticalAlignment="Center"
-                       HorizontalAlignment="Center"/>
+                       HorizontalAlignment="Center"
+                       TextAlignment="Center"/>
 
             <!-- Name -->
             <TextBlock Grid.Column="1"
                        Text="{Binding VehicleName}"
                        FontWeight="Bold"
                        VerticalAlignment="Center"
-                       TextTrimming="CharacterEllipsis"/>
+                       TextTrimming="CharacterEllipsis"
+                       TextAlignment="Center"/>
 
             <!-- Tag -->
             <TextBlock Grid.Column="2"
                        Text="{Binding VehicleTag}"
                        VerticalAlignment="Center"
-                       HorizontalAlignment="Center"/>
+                       HorizontalAlignment="Center"
+                       TextAlignment="Center"/>
 
             <!-- Fuel as ProgressBar -->
             <ProgressBar Grid.Column="3"
@@ -50,7 +54,8 @@
                        Text="{Binding VehicleStatus}"
                        Foreground="{Binding StatusColor}"
                        VerticalAlignment="Center"
-                       HorizontalAlignment="Center"/>
+                       HorizontalAlignment="Center"
+                       TextAlignment="Center"/>
 
         </Grid>
 

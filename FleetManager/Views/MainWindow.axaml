@@ -19,8 +19,15 @@
     
     <StackPanel>
 
+        <Button
+            Content="Zapisz zmiany"
+            HorizontalAlignment="Center"
+            Command="{Binding SaveCommand}"
+            CornerRadius="5"
+            Background="Beige"
+            />
         <!-- Nagłówki -->
-        <Grid ColumnDefinitions="50,160,110,*,120"
+        <Grid ColumnDefinitions="55,155,105,*,125"
               ColumnSpacing="5"
               Margin="5">
     
