@@ -9,27 +9,31 @@ namespace FleetManager.ViewModels;
 
 public class MainWindowViewModel : ViewModelBase
 {
-    public ObservableCollection<Vehicle> Vechicles { get; set; } = [];
+    public ObservableCollection<Vehicle> Vehicles { get; set; } = [];
     
-    private const string FilePath = "Data/vechicles.json";
+    private const string FilePath = "Data/vehicles.json";
 
     public MainWindowViewModel()
     {
-        
+        LoadCharacters();
     }
     
     private void LoadCharacters()
     {
-        if(!File.Exists(FilePath)) return;
+        if (!File.Exists(FilePath))
+        {
+            Console.WriteLine($"File {FilePath} not found");
+            return;
+        }
         try
         {
             var jsonData = File.ReadAllText(FilePath);
             var list = JsonSerializer.Deserialize<List<Vehicle>>(jsonData);
-            Vechicles.Clear();
+            Vehicles.Clear();
             if (list == null) return;
             foreach (var vechicle in list)
             {
-                Vechicles.Add(vechicle);
+                Vehicles.Add(vechicle);
             }
         }
         catch (Exception e)

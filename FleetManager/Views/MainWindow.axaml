@@ -16,12 +16,39 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <ListBox>
-        <ListBox.ItemTemplate>
-            <DataTemplate>
-                <views:FleetList/>
-            </DataTemplate>
-        </ListBox.ItemTemplate>
-    </ListBox>
+    
+    <StackPanel>
+
+        <!-- Nagłówki -->
+        <Grid ColumnDefinitions="50,160,110,*,120"
+              ColumnSpacing="5"
+              Margin="5">
+    
+            <TextBlock Grid.Column="0" Text="ID" FontWeight="Bold"
+                       HorizontalAlignment="Center" TextAlignment="Center"/>
+    
+            <TextBlock Grid.Column="1" Text="Name" FontWeight="Bold"
+                       HorizontalAlignment="Center" TextAlignment="Center"/>
+    
+            <TextBlock Grid.Column="2" Text="Tag" FontWeight="Bold"
+                       HorizontalAlignment="Center" TextAlignment="Center"/>
+    
+            <TextBlock Grid.Column="3" Text="Fuel" FontWeight="Bold"
+                       HorizontalAlignment="Center" TextAlignment="Center"/>
+    
+            <TextBlock Grid.Column="4" Text="Status" FontWeight="Bold"
+                       HorizontalAlignment="Center" TextAlignment="Center"/>
+        </Grid>
+
+        <!-- Lista pojazdów -->
+        <ListBox ItemsSource="{Binding Vehicles}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <views:FleetList/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+    </StackPanel>
 
 </Window>
