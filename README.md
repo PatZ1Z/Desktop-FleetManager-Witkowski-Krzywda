@@ -4,6 +4,10 @@ Fleet Manager to krytyczny system desktopowy służący do monitorowania i zarz�
 
 Projekt jest realizowany w ramach cyklu SDLC przez dwuosobowe załogi inżynierskie.
 
+## 💍 Załoga pierścienia: 
+- Patryk Witkowski
+- Maciej Krzywda
+
 ## 🎯 Cele Biznesowe (Wymagania)
 System musi realizować następujące funkcjonalności:
 - Monitoring Floty: Wyświetlanie listy pojazdów przy użyciu dedykowanych komponentów graficznych (UserControl).
