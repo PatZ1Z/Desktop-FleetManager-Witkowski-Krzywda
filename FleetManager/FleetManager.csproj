@@ -10,7 +10,7 @@
     <ItemGroup>
         <AvaloniaResource Include="Assets\**" />
         <Content Include="Data\vehicles.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
     </ItemGroup>
 

@@ -5,9 +5,10 @@
              xmlns:Models="clr-namespace:FleetManager.Models"
              xmlns:protocol="clr-namespace:Tmds.DBus.Protocol;assembly=Tmds.DBus.Protocol"
              xmlns:system="clr-namespace:System;assembly=System.Runtime"
+             xmlns:ViewModels="clr-namespace:FleetManager.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="FleetManager.Views.FleetList"
-             x:DataType="Models:Vehicle"
+             x:DataType="ViewModels:VehicleItemViewModel"
              >
     
     <Border Padding="10"
@@ -34,23 +35,37 @@
                        VerticalAlignment="Center"
                        TextTrimming="CharacterEllipsis"
                        TextAlignment="Center"/>
-
-            <!-- Tag -->
+            
             <TextBlock Grid.Column="2"
                        Text="{Binding VehicleTag}"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        TextAlignment="Center"/>
+            <Grid Grid.Column="3" HorizontalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Button Grid.Column="0"
+                        Content="Paliwo++"
+                        Command="{Binding AddFuelCommand}"
+                        Background="#351C15"
+                        Foreground="#FFB500"
+                        Margin="10"
+                        HorizontalAlignment="Stretch"/>
 
-            <!-- Fuel as ProgressBar -->
-            <ProgressBar Grid.Column="3"
-                         Minimum="0"
-                         Maximum="1"
-                         Value="{Binding VehicleFuel}"
-                         Height="20"
-                         VerticalAlignment="Center"
-                         Margin="0,0,5,0"
-                         Foreground="#FFB500"/>
+                <!-- ProgressBar -->
+                <ProgressBar Grid.Column="1"
+                             Minimum="0"
+                             Maximum="1"
+                             Value="{Binding VehicleFuel}"
+                             Height="20"
+                             Margin="10"
+                             HorizontalAlignment="Stretch"
+                             VerticalAlignment="Center"
+                             Foreground="#FFB500"/>
+            </Grid>
 
             <!-- Status -->
             <StackPanel Grid.Column="4" Orientation="Vertical">

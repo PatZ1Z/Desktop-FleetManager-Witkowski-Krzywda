@@ -1,43 +1,29 @@
 using System;
 using System.Collections.Generic;
+using System.Reactive;
 using Avalonia.Media;
 
 namespace FleetManager.Models;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 
-public class Vehicle : ReactiveObject
+public class Vehicle
 {
-    [Reactive] public int VehicleId { get; set; }
+    public int VehicleId { get; set; }
 
-    [Reactive] public string VehicleName { get; set; } = string.Empty;
+    public string VehicleName { get; set; } = string.Empty;
 
-    [Reactive] public string VehicleTag { get; set; } = string.Empty;
+    public string VehicleTag { get; set; } = string.Empty;
 
-    [Reactive] public double VehicleFuel { get; set; }
+    public double VehicleFuel { get; set; }
 
-    [Reactive] public string VehicleStatus { get; set; } = "Available";
-    
-    public bool CanChangeStatus => VehicleFuel > 0.14 && VehicleStatus != "Service";
-    
-    public Vehicle()
+    public string VehicleStatus { get; set; } = "Available";
+
+    public bool CanChangeStatus =>
+        VehicleFuel > 0.14 && VehicleStatus != "Service";
+
+    public void AddFuel(double amount)
     {
-        
-        this.WhenAnyValue(x => x.VehicleFuel, x => x.VehicleStatus)
-            .Subscribe(_ =>
-            {
-                this.RaisePropertyChanged(nameof(CanChangeStatus));
-                this.RaisePropertyChanged(nameof(StatusColor));
-                
-            });
+        VehicleFuel += amount;
     }
-    
-    public IBrush StatusColor =>
-        VehicleStatus switch
-        {
-            "Available" => Brushes.Green,
-            "In Route" => Brushes.Orange,
-            "Service" => Brushes.Red,
-            _ => Brushes.Black
-        };
 }

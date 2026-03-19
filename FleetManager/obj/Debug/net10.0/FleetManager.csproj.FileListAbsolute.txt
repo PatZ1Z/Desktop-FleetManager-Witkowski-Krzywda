@@ -248,7 +248,7 @@
 /home/maciej/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/obj/Debug/net10.0/FleetManager.pdb
 /home/maciej/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/obj/Debug/net10.0/FleetManager.genruntimeconfig.cache
 /home/maciej/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/obj/Debug/net10.0/ref/FleetManager.dll
-/home/maciej/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/obj/Debug/net10.0/FleetManager.csproj.Fody.CopyLocal.cache
-/home/maciej/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/obj/Debug/net10.0/FleetManager.csproj.Fody.RuntimeCopyLocal.cache
 /home/pat/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/obj/Debug/net10.0/FleetManager.csproj.Fody.CopyLocal.cache
 /home/pat/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/obj/Debug/net10.0/FleetManager.csproj.Fody.RuntimeCopyLocal.cache
+/home/maciej/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/obj/Debug/net10.0/FleetManager.csproj.Fody.CopyLocal.cache
+/home/maciej/RiderProjects/Desktop-FleetManager-Witkowski-Krzywda/FleetManager/obj/Debug/net10.0/FleetManager.csproj.Fody.RuntimeCopyLocal.cache
