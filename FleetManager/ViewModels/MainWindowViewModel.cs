@@ -41,8 +41,7 @@ public class MainWindowViewModel : ViewModelBase
             foreach (var vm in Vehicles)
             {
                 var vehicle = vm.GetModel();
-
-                // 🔹 Debug: pokazujemy wszystkie kluczowe właściwości
+                
                 Console.WriteLine($"VehicleId={vehicle.VehicleId}, Name={vehicle.VehicleName}, Tag={vehicle.VehicleTag}, Fuel={vehicle.VehicleFuel}, Status={vehicle.VehicleStatus}");
 
                 models.Add(vehicle);
@@ -51,7 +50,6 @@ public class MainWindowViewModel : ViewModelBase
             File.WriteAllText(FilePath, JsonSerializer.Serialize(models, _options));
 
             Console.WriteLine($"Vehicles saved to {FilePath}");
-            Console.WriteLine("=======================");
         }
         catch (Exception e)
         {
