@@ -33,7 +33,6 @@
             Background="#FFB500"
         />
         
-        <!-- Nagłówki -->
         <Grid ColumnDefinitions="55,155,105,*,125"
               ColumnSpacing="5"
               Margin="5">
@@ -53,8 +52,7 @@
             <TextBlock Grid.Column="4" Text="Status" FontWeight="Bold" Foreground="#FFB500"
                        HorizontalAlignment="Center" TextAlignment="Center"/>
         </Grid>
-
-        <!-- Lista pojazdów -->
+        
         <ListBox ItemsSource="{Binding Vehicles}">
             <ListBox.ItemTemplate>
                 <DataTemplate>

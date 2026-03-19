@@ -20,15 +20,13 @@
               VerticalAlignment="Center"
               ColumnSpacing="5"
               >
-
-            <!-- ID -->
+            
             <TextBlock Grid.Column="0"
                        Text="{Binding VehicleId}"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        TextAlignment="Center"/>
-
-            <!-- Name -->
+            
             <TextBlock Grid.Column="1"
                        Text="{Binding VehicleName}"
                        FontWeight="Bold"
@@ -54,8 +52,7 @@
                         Foreground="#FFB500"
                         Margin="10"
                         HorizontalAlignment="Stretch"/>
-
-                <!-- ProgressBar -->
+                
                 <ProgressBar Grid.Column="1"
                              Minimum="0"
                              Maximum="1"
@@ -66,8 +63,7 @@
                              VerticalAlignment="Center"
                              Foreground="#FFB500"/>
             </Grid>
-
-            <!-- Status -->
+            
             <StackPanel Grid.Column="4" Orientation="Vertical">
                 <ComboBox 
                           SelectedItem="{Binding VehicleStatus, Mode=TwoWay}"
